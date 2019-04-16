@@ -8,15 +8,15 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/stocks/:ticker', express.static(path.join(__dirname, 'public')));
 
 const axios3001 = axios.create({
-  baseURL: 'http://localhost:3001'
+  baseURL: 'http://ec2-3-17-152-146.us-east-2.compute.amazonaws.com'
 });
 
 const axios3002 = axios.create({
-  baseURL: 'http://localhost:3002'
+  baseURL: 'http://ec2-18-221-1-230.us-east-2.compute.amazonaws.com/bundle.js'
 });
 
 const axios3003 = axios.create({
-  baseURL: 'http://localhost:3003'
+  baseURL: 'http://ec2-3-14-11-72.us-east-2.compute.amazonaws.com'
 });
 
 const axios3004 = axios.create({

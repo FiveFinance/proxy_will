@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server.js"
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
@@ -23,3 +23,5 @@
     "express": "^4.16.4"
   }
 }
+
+ssh -i InformationModule.pem ec2-user@ec2-3-14-11-72.us-east-2.compute.amazonaws.com
